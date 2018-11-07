@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'open-sans', sans-serif, Lato;
+}
+/* navbar base */
+.row {
+    max-width: 1140px;
+    margin: auto;
+}
+/* background effecton header */
+.header {
+    height: 5.5rem;
+    background-image: linear-gradient(to right, #20245E, #1A3095);
+}
+/* Header-logo */
+.visa-logo {
+    height: 3rem;
+    width: auto;
+    margin-top: 1rem;
+    padding-top: .5rem;
+    padding-left: .5rem;
+}
+/* header ribbon */
+.navbar-line {
+    height: 5px;
+    z-index: 3;
+    display: block;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background-image: linear-gradient(to right, #FA9B01, #F2CA13);
+}
+/* menu item */
+.nav {
+    list-style-type: none;
+    float: right;
+    padding-bottom: 1.5rem;
+    margin-top: -15px;
+    position: relative;
+    margin-right: 4rem;
+}
+
+nav .menu {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translateX(10px);
+    -webkit-transform: translateX(-50%);
+}
+.menu:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.menu ul li {
+    display: inline-block;
+    list-style: none;
+    overflow: hidden;
+}
+/* Linear transition onhover of meny items */
+.menu ul li a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    position: relative;
+    color: #ffff;
+    font-weight: 300;
+    font-family: lato;
+    font-size: 1.1rem;
+    -webkit-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+}
+/* onhover of any meny-item font color change */
+.menu ul li a:hover {
+    color: #F2CA13;
+}
+/* navigation indicator */
+.menu .navbar-indicator
+ {
+    position: absolute;
+    top: 75px;
+    left: 210px;
+    width: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #FA9B01;
+    transition-duration: 1s;
+}
+/* positioning search ox with  */
+.nav-searchbar {
+    position: relative;
+    top: 20px;
+    height: 5%;
+}
+/* Grey seperation Line */
+.sep-line {
+    display: inline-block;
+    width: 1px;
+    background-color: rgba(255, 255, 255, 0.25);
+    height: 2rem;
+    position: absolute;
+    margin-top: 5%;
+    margin-left: -40px;
+
+}
